@@ -10,4 +10,4 @@ COPY . .
 
 RUN poetry --no-root install
 
-ENTRYPOINT ["poetry", "run", "python3.10", "main.py"]
+ENTRYPOINT ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
