@@ -1,13 +1,13 @@
 import fastapi
 
-from models import 
+from models import InputModel
 
 
 app = fastapi.FastAPI()
 
 
 @app.get("/")
-async def read_root():
+async def read_root(input: InputModel):
     return {"hello": "world"}
 
 
