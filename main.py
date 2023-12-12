@@ -1,5 +1,7 @@
 import fastapi
 
+from models import 
+
 
 app = fastapi.FastAPI()
 
@@ -9,9 +11,5 @@ async def read_root():
     return {"hello": "world"}
 
 
-def main():
-    app.run()
-
-
 if __name__ == "__main__":
-    main()
+    app.run()
