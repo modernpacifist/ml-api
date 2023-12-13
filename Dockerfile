@@ -1,5 +1,7 @@
 FROM python:3.10-alpine
 
+RUN apk add cmake
+
 RUN pip install poetry==1.3.2
 
 RUN mkdir -m 777 /app
