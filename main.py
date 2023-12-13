@@ -11,10 +11,11 @@ async def read_root():
 
 
 @app.post("/predict", status_code=201)
-async def predict(input: InputModel, response: Response):
-    data = input.dict()
-    
-    if "" in data.values():
-        response.status_code = status.HTTP_400_BAD_REQUEST
+async def predict(input_model: InputModel, response: Response):
+
+    input_model.Loan_amount
+
+    # if "" in input_model.values():
+        # response.status_code = status.HTTP_400_BAD_REQUEST
 
     return {"Prediction": "0"}
