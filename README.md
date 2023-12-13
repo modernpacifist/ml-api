@@ -1,5 +1,5 @@
 ### Requirements
-Poetry package >= 1.4
+[Poetry](https://python-poetry.org/docs/) package >= 1.4
 
 ## Run
 ```
