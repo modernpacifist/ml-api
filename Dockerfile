@@ -1,10 +1,17 @@
-FROM python:3.10-alpine
+#FROM python:3.10-alpine
+FROM debian:bookworm
 
-RUN apk update
+RUN apt update
 
-RUN apk add cmake build-base
+RUN apt install python3 python3-pip -y
 
-RUN pip install poetry==1.7
+RUN python3 --version
+
+RUN python3 -m pip --version
+
+RUN python3 -m pip install --break-system-packages poetry==1.3.2
+
+RUN poetry --version
 
 RUN mkdir -m 777 /app
 
