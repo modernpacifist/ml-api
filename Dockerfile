@@ -5,13 +5,7 @@ RUN apt update
 
 RUN apt install python3 python3-pip -y
 
-RUN python3 --version
-
-RUN python3 -m pip --version
-
 RUN python3 -m pip install --break-system-packages poetry==1.3.2
-
-RUN poetry --version
 
 RUN mkdir -m 777 /app
 
