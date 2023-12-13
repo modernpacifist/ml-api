@@ -47,20 +47,3 @@ def predict_adapter(json_data):
     res = predict(input_data)
 
     return res
-
-
-# Вызов функции предсказания
-# output_json = predict(input_data)
-
-# # Замена ключей
-# """
-# Это надо сделать
-# for item in output_json:
-    # item["BankA"] = item.pop("prediction_target1")
-    # item["BankB"] = item.pop("prediction_target2")
-    # item["BankC"] = item.pop("prediction_target3")
-    # item["BankD"] = item.pop("prediction_target4")
-    # item["BankE"] = item.pop("prediction_target5")
-# """
-
-# print(output_json)  # вывод
