@@ -1,14 +1,16 @@
 FROM python:3.10-alpine
 
-RUN apk add cmake
+RUN apk update
 
-RUN pip install poetry==1.3.2
+RUN apk add cmake build-base
+
+RUN pip install poetry==1.7
 
 RUN mkdir -m 777 /app
 
 WORKDIR /app/
 
-COPY . .
+COPY ./src/ .
 
 RUN poetry install --no-root
 
