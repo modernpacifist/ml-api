@@ -1,3 +1,4 @@
+import json
 from fastapi import FastAPI, Response
 from pydantic import ValidationError
 
@@ -42,8 +43,6 @@ async def predict(input_model: InputModel, response: Response):
         errors = e.errors()
         print(errors)
         prediction_result = ""
-
-    # if "" in input_model.values():
-        # response.status_code = status.HTTP_400_BAD_REQUEST
+        # TODO: return 400 <13-12-23, modernpacifist> #
 
     return {"Prediction": prediction_result}
