@@ -15,7 +15,7 @@ pandas = "^2.1.4"
 nltk = "^3.8.1"
 pymystem3 = "^0.2.0"
 scikit-learn = "1.2.2"
-xgboost = "2.0.2"
+xgboost = "^2.0.2"
 
 
 [build-system]
