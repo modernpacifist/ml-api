@@ -1,6 +1,8 @@
-### Colab links
-Notebook used for data preprocessing:
+## Colab notebooks used for this project
+Data preprocessing:  
 https://colab.research.google.com/drive/11UsQ9RLtiilLAEFFqvn-Ql2nKdHD-3sG?usp=sharing
 
-Notebook used for training and evaluation:
+Training and evaluation:  
 https://colab.research.google.com/drive/1SPJG6nUiVlPdZB0BGngMydwGaSlYQanp?usp=sharing
+
+Author of the notebooks [@Maksembek](https://github.com/Maksembek)  
